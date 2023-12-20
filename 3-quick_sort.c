@@ -37,7 +37,7 @@ size_t lomuto_part(int *array, size_t size, ssize_t high, ssize_t low)
 			swap_int(array, size, &array[b], &array[a++]);
 	swap_int(array, size, &array[a], &array[high]);
 
-	return(a);
+	return (a);
 }
 
 /**
@@ -68,7 +68,7 @@ void q_sort(int *array, size_t size, ssize_t low, ssize_t high)
   */
 void quick_sort(int *array, size_t size)
 {
-	if (!size || !array)
+	if (!array || !size)
 		return;
 	q_sort(array, size, 0, size - 1);
 }
